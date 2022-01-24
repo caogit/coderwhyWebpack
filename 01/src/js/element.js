@@ -1,5 +1,6 @@
 import '../css/style.css'
 import '../css/style.less'
+import '../css/testpostcss.css'
 
 const div = document.createElement('div')
 div.className = 'title'
