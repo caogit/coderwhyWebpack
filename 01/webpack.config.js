@@ -3,6 +3,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {DefinePlugin} = require('webpack')
 const CopyPlugin  = require('copy-webpack-plugin')
+const {VueLoaderPlugin} = require('vue-loader/dist/index')
 
 module.exports = {
     mode:'development',
@@ -73,6 +74,14 @@ module.exports = {
                 generator:{
                     filename:'font/[name]_[hash:6][ext]'
                 }
+            },
+            {
+                test:/\.js$/,
+                loader:'babel-loader',
+            },
+            {
+                test:/\.vue$/,
+                loader:'vue-loader',
             }
         ]
     },
@@ -95,6 +104,7 @@ module.exports = {
                     }
                 }
             ]
-        })
+        }),
+        new VueLoaderPlugin()
     ]
 } 
