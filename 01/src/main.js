@@ -3,7 +3,7 @@ const {formatMoney} = require('./js/format')
 import {createApp} from 'vue'
 import './js/element'
 
-import App from './vue/App.vue'
+import App from './vue/App'
 
 const message = 'es6'
 const names = ['aa','bb','cc']

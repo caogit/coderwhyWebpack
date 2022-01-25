@@ -8,6 +8,19 @@ const {VueLoaderPlugin} = require('vue-loader/dist/index')
 module.exports = {
     mode:'development',
     devtool:'source-map',
+    devServer:{
+        // hot:true
+        port:9999,
+        open:true,
+        // compress:true // 默认启用
+
+    },
+    resolve:{
+        extensions:['.vue','.js'], // 这个意思就是引入的时候就不需要些后缀，会自动去这里匹配
+        alias:{
+            '@':path.resolve(__dirname,'./src')
+        }
+    },
     entry:'./src/main.js',
     output:{
         path:path.resolve(__dirname,'./build'),
