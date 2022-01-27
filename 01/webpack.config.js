@@ -4,12 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {DefinePlugin} = require('webpack')
 const CopyPlugin  = require('copy-webpack-plugin')
 const {VueLoaderPlugin} = require('vue-loader/dist/index')
+const Webpackbar = require('webpackbar')
 
 module.exports = {
     mode:'development',
     devtool:'source-map',
     devServer:{
-        // hot:true
+        hot:true,
         port:9999,
         open:true,
         // compress:true // 默认启用
@@ -118,6 +119,8 @@ module.exports = {
                 }
             ]
         }),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new Webpackbar()
     ]
+
 } 
