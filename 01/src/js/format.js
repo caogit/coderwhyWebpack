@@ -1,7 +1,7 @@
-const formatMoney = function (x){
-    return 'commonJs'+x
-}
+const formatMoney = function (x) {
+  return "commonJs" + x;
+};
 
-module.exports   = {
-formatMoney
-}
+module.exports = {
+  formatMoney,
+};

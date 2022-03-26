@@ -1,16 +1,19 @@
 <template>
-<div>{{title}}</div>
+  <div>{{ title }}</div>
 </template>
 <script>
-import axios from 'axios'
+import axios from "axios";
 export default {
-    data(){
-        return{
-            title:'哈哈Vue12'
-        }
-
-    },
-   
-}
+  data() {
+    return {
+      title: "哈哈Vue12",
+    };
+  },
+};
 </script>
-<style></style>
+<style>
+.asdf {
+  position: absolute;
+  height: 100px;
+}
+</style>
