@@ -1,3 +1,3 @@
 export function sum(x) {
-  return "es6" + x;
+	return 'es6' + x
 }

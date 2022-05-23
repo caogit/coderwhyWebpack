@@ -1,7 +1,7 @@
 const formatMoney = function (x) {
-  return "commonJs" + x;
-};
+	return 'commonJs' + x
+}
 
 module.exports = {
-  formatMoney,
-};
+	formatMoney,
+}
