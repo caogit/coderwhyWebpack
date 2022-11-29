@@ -1,4 +1,4 @@
-# coderwhyWebpack
+# webpack-杂七杂八
 
 ## main分支：基础webpack
 ## test_eslint_prettier分支： eslint和prettier和stylelint的配置
